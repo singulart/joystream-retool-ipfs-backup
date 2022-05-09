@@ -46,3 +46,4 @@ export const usersListQuery = () => genericQuery(
 
 export const userDataQuery = (id: number) => genericQuery({"0": id,"length":1});
 
+export const userRewardsQuery = (id: string) => genericQuery({"0": [id],"length":1});

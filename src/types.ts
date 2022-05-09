@@ -3,6 +3,7 @@ export interface IPersonExplorerSearch {
 }
 
 export interface ISelectAllPersonID {
+  id: string[],
   memberhandle: string[];
   memberid: string[];
 }
