@@ -10,7 +10,7 @@ import { expose } from "threads/worker";
 const logger = new Logger('ReTool');
 axiosRetry(axios, { retries: 3, retryCondition: (_error) => true });
 
-export const download = async (personid: number, taskNumber: number, responseData: IPersonExplorerSearch, formattedDate: string) => {
+export const download = async (personid: number, taskNumber: number, formattedDate: string) => {
 
   const personDataResponse: ISelectAllPersonID = (await axios.post('https://joystream.retool.com/api/public/3ef6f2ee-7d4d-4437-b5f6-f59c8cb17ff6/query?queryName=SelectAllPersonID',
     userDataQuery(personid))).data;
