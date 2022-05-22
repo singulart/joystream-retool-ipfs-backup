@@ -1,5 +1,5 @@
 <p>
-This repo is the submission for [L2 Rollathon event](https://gitcoin.co/hackathon/Rollathon/).
+This repo is the submission for [L2 Rollathon event](https://gitcoin.co/hackathon/Rollathon).
 
 # One-liner description
 
@@ -7,11 +7,11 @@ DAO tool that creates periodic snapshots of Joystream DAO CRM and uploads it to 
 
 # Use-case Elaboration
 
-Joystream is a DAO around video platform and is currently in incentivised testnet mode. Testnet participants earn rewards that are collected and tracked in a CRM system called [Retool](https://docs.retool.com/docs/whats-retool). Ironically, this is a traditional web2 centralised system. As such, this tool doesn't provide full transparency as it is managed by a small circle of users. 
+[Joystream](https://joystream.org) is a DAO around video platform and is currently in incentivised testnet mode. Testnet participants earn rewards that are collected and tracked in a CRM system called [Retool](https://docs.retool.com/docs/whats-retool). Ironically, this is a traditional web2 centralised system. As such, this tool doesn't provide full transparency as it is managed by a small circle of users. 
 
 Such a setup is far from ideal on many levels. To achieve better transparency, and to allow any user to have more control over their data, I've come up with the idea of this project. Its purpose is really simple. It creates a snapshot of Joystream DAO CRM and uploads its files to Web3 Storage as `cars`. 
 
-Knowing the CIDs of all uploaded snapshots, users can reconcile their earned allocations at any time.
+Knowing the CIDs of all uploaded snapshots, users can reconcile their earned allocations at any time easily.
 </p>
 
 <p>
