@@ -27,6 +27,9 @@ export class AppService {
   
     fs.readdirSync(downloadFolder).filter(file => file.endsWith('json')).forEach(async (file) => {
       const retoolJson = JSON.parse(fs.readFileSync(`${downloadFolder}/${file}`, {encoding: 'utf8', flag:'r'}));
+      if(!retoolJson.tjoyearned[0] || !retoolJson.joyearnedpercent[0]) {
+        return;
+      }
       const block = await this.encodeCborBlock(retoolJson);
       const car = await this.makeCar(block.cid, [block]);
       const client = new Web3Storage({ token: process.env.WEB3STORAGE_TOKEN });
@@ -35,7 +38,7 @@ export class AppService {
         try {
           cid = await client.putCar(car, {name: file});
           logger.log(`🎉 Done storing Joystream Retool data as CBOR object. CID: ${cid}`);
-          logger.log(`💡 If you have ipfs installed, try: ipfs dag get ${cid}\n`);
+          // logger.log(`💡 If you have ipfs installed, try: ipfs dag get ${cid}\n`);
         } catch (error) {
           logger.error(error);
           await this.delay(30000); // rate limit cool down period is 30 seconds
