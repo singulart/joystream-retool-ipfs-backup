@@ -1,0 +1,8 @@
+{
+  "name": "Jostream CRM IPFS tool",
+  "description": "DAO tool that creates periodic snapshots of Joystream DAO CRM and uploads it to Web3 Storage.",
+  "repository": "https://github.com/singulart/joystream-retool-ipfs-backup",
+  "logo": "https://miro.medium.com/max/3150/1*ciI-I4VTggwkcmCH2jGhUQ.jpeg",
+  "keywords": ["rollathon", "hackathon", "web3"]
+}
+
