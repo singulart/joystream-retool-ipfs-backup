@@ -1,3 +1,4 @@
+<p>
 This repo is the submission for [L2 Rollathon event](https://gitcoin.co/hackathon/Rollathon/).
 
 # One-liner description
@@ -11,6 +12,13 @@ Joystream is a DAO around video platform and is currently in incentivised testne
 Such a setup is far from ideal on many levels. To achieve better transparency, and to allow any user to have more control over their data, I've come up with the idea of this project. Its purpose is really simple. It creates a snapshot of Joystream DAO CRM and uploads its files to Web3 Storage as `cars`. 
 
 Knowing the CIDs of all uploaded snapshots, users can reconcile their earned allocations at any time.
+</p>
+
+<p>
+  <a href="https://heroku.com/deploy">
+    <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy">
+  </a>
+</p>
 
 <p align="center">
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
